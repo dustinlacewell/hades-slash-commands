@@ -1,5 +1,5 @@
 import { Collection } from "discord.js";
-import { Constructor, Newable } from "../../utils";
+import { Constructor, Newable } from "hades";
 import { SlashArgParser } from "../parsers/SlashArgParser";
 import { SlashArgParserMeta } from "./SlashArgParserMeta";
 import { SlashCommandMeta } from "./slashCommandMeta";

@@ -1,4 +1,4 @@
-import { Constructor, Newable } from "../../utils";
+import { Constructor, Newable } from "hades";
 import { SlashArgParser } from "../parsers/SlashArgParser";
 
 /**

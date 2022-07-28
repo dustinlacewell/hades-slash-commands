@@ -2,7 +2,7 @@ import { injectable } from 'inversify';
 
 import { getSlashArgMeta, registerSlashParser } from '../metadata';
 import { SlashArgParser } from '../parsers/SlashArgParser';
-import { Constructable, Constructor, Newable } from '../../utils';
+import { Constructable, Constructor, Newable } from 'hades';
 
 
 export interface ParserDecorator extends ClassDecorator, PropertyDecorator { }

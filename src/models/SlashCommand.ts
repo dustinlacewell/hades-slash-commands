@@ -1,7 +1,7 @@
 import { inject, injectable } from "inversify";
 import { InteractionReplyOptions } from "discord.js";
 
-import { DiscordService } from "../../services/DiscordService";
+import { DiscordService } from "hades";
 import { SlashCommandContext } from "./SlashCommandContext";
 
 /**

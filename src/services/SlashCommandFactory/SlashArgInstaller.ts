@@ -3,7 +3,7 @@ import { Container } from 'inversify';
 import { SlashArgError } from '../../errors';
 import { SlashArgMeta } from '../../metadata';
 import { SlashArgParser } from '../../parsers';
-import { Constructor, InstallerFunc, Newable } from '../../../utils';
+import { Constructor, InstallerFunc, Newable } from 'hades';
 import { SlashCommandContext } from '../../models/SlashCommandContext';
 
 /**

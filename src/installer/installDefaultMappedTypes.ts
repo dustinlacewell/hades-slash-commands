@@ -1,5 +1,5 @@
 import { Container } from "inversify";
-import { Constructable, Newable } from "../../utils";
+import { Constructable, Newable } from "hades";
 import { SlashArgParser, StringParser } from "../parsers";
 
 export type TypePair = readonly [Constructable, Newable<SlashArgParser>];

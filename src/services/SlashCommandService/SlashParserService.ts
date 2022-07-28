@@ -1,6 +1,6 @@
 import { BaseCommandInteraction } from "discord.js";
 import { inject, optional } from "inversify";
-import { singleton } from "../../../decorators";
+import { singleton } from "hades";
 import { SlashCommandContext } from "../../models";
 
 export type SlashParserServiceOptions = {

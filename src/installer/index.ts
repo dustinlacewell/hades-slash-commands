@@ -1,5 +1,5 @@
 import { Container } from "inversify";
-import { Installer } from "../../Installer";
+import { Installer } from "hades";
 import { installCommands } from "./installCommands";
 import { defaultMappedTypes, installDefaultMappedTypes, TypePair } from "./installDefaultMappedTypes";
 import { installParsers } from "./installParsers";

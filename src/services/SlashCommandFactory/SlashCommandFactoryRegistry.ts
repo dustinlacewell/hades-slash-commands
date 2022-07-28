@@ -1,7 +1,7 @@
 import { Collection } from 'discord.js';
 import { multiInject, postConstruct } from 'inversify';
 
-import { singleton } from '../../../decorators/singleton';
+import { singleton } from 'hades';
 import { SlashCommandFactory } from './SlashCommandFactory';
 
 

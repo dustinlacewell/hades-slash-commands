@@ -1,6 +1,6 @@
 import { BaseCommandInteraction, Client } from "discord.js";
 import { inject } from "inversify";
-import { singleton } from "../../../decorators/singleton";
+import { singleton } from "hades";
 import { SlashArgError } from "../../errors/SlashArgError";
 import { SlashCommandContext } from "../../models/SlashCommandContext";
 import { SlashCommandFactoryRegistry } from "../SlashCommandFactory/SlashCommandFactoryRegistry";

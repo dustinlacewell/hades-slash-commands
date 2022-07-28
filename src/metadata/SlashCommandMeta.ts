@@ -1,6 +1,6 @@
 import { Collection } from "discord.js";
 
-import { Constructor } from "../../utils";
+import { Constructor } from "hades";
 import { Command } from "../builtins";
 import { SlashArgMeta } from "./SlashArgMeta";
 
