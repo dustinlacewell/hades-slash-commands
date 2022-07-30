@@ -1,0 +1,1 @@
+{"version":3,"file":"SlashArgError.d.ts","sourceRoot":"","sources":["../../src/errors/SlashArgError.ts"],"names":[],"mappings":"AACA;;;;;GAKG;AACH,qBAAa,aAAc,SAAQ,KAAK;IACpC,QAAQ,EAAE,OAAO,CAAC;gBAEN,GAAG,EAAE,MAAM,EAAE,QAAQ,UAAO;CAI3C"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"parser.d.ts","sourceRoot":"","sources":["../../src/decorators/parser.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,cAAc,EAAE,MAAM,2BAA2B,CAAC;AAC3D,OAAO,EAA8B,OAAO,EAAE,MAAM,OAAO,CAAC;AAG5D,MAAM,WAAW,eAAgB,SAAQ,cAAc,EAAE,iBAAiB;CAAI;AAE9E;;;GAGG;AACH,wBAAgB,MAAM,CAAC,WAAW,CAAC,EAAE,OAAO,CAAC,cAAc,CAAC,GAAG,eAAe,CAe7E"}

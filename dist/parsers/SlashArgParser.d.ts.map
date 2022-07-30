@@ -1,0 +1,1 @@
+{"version":3,"file":"SlashArgParser.d.ts","sourceRoot":"","sources":["../../src/parsers/SlashArgParser.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,iBAAiB,EAAE,MAAM,mDAAmD,CAAC;AACtF,OAAO,EAAE,mBAAmB,EAAE,MAAM,+BAA+B,CAAC;AAGpE,qBACa,cAAc;IACvB,IAAI,EAAE,MAAM,CAAC;IACb,WAAW,EAAE,MAAM,CAAC;IAEd,KAAK,CAAC,GAAG,EAAE,iBAAiB,EAAE,OAAO,EAAE,mBAAmB,GAAG,OAAO,CAAC,GAAG,CAAC;CAClF"}
