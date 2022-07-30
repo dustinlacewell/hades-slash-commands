@@ -7,9 +7,14 @@ import { SlashCommandFactoryRegistry } from "../SlashCommandFactory/SlashCommand
 import { SlashParserService } from "./SlashParserService";
 import { Command } from "../../builtins/Command";
 import { getSlashCommandMetas } from "../../metadata/api";
+import { SlashCommandRegistrationService } from "./SlashCommandRegistrationService";
 
 @singleton(SlashCommandService)
 export class SlashCommandService {
+  /** service for registering slash commands from the onReady event */
+  @inject(SlashCommandRegistrationService)
+  registrationService: SlashCommandRegistrationService;
+
   /** service for parsing incoming interactions */
   @inject(SlashParserService)
   parserService: SlashParserService;
@@ -55,7 +60,7 @@ export class SlashCommandService {
   }
 
   async registerCommands(client: Client) {
-    await client.application.commands.set(this.getCommandRegistrationMeta());
+    return this.registrationService.registerCommands(client);
   }
 
   protected getCommandRegistrationMeta(): Command[] {
