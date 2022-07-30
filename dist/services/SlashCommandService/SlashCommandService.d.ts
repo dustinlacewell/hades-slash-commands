@@ -3,7 +3,10 @@ import { SlashCommandContext } from "../../models/SlashCommandContext";
 import { SlashCommandFactoryRegistry } from "../SlashCommandFactory/SlashCommandFactoryRegistry";
 import { SlashParserService } from "./SlashParserService";
 import { Command } from "../../builtins/Command";
+import { SlashCommandRegistrationService } from "./SlashCommandRegistrationService";
 export declare class SlashCommandService {
+    /** service for registering slash commands from the onReady event */
+    registrationService: SlashCommandRegistrationService;
     /** service for parsing incoming interactions */
     parserService: SlashParserService;
     /** factories for creating command instances */

@@ -26,6 +26,7 @@ const SlashArgError_1 = require("../../errors/SlashArgError");
 const SlashCommandFactoryRegistry_1 = require("../SlashCommandFactory/SlashCommandFactoryRegistry");
 const SlashParserService_1 = require("./SlashParserService");
 const api_1 = require("../../metadata/api");
+const SlashCommandRegistrationService_1 = require("./SlashCommandRegistrationService");
 let SlashCommandService = SlashCommandService_1 = class SlashCommandService {
     // @inject(SlashCommandHelpService)
     // help: SlashCommandHelpService
@@ -64,13 +65,17 @@ let SlashCommandService = SlashCommandService_1 = class SlashCommandService {
     }
     registerCommands(client) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield client.application.commands.set(this.getCommandRegistrationMeta());
+            return this.registrationService.registerCommands(client);
         });
     }
     getCommandRegistrationMeta() {
         return (0, api_1.getSlashCommandMetas)().map((meta) => meta.registrationDetails);
     }
 };
+__decorate([
+    (0, inversify_1.inject)(SlashCommandRegistrationService_1.SlashCommandRegistrationService),
+    __metadata("design:type", SlashCommandRegistrationService_1.SlashCommandRegistrationService)
+], SlashCommandService.prototype, "registrationService", void 0);
 __decorate([
     (0, inversify_1.inject)(SlashParserService_1.SlashParserService),
     __metadata("design:type", SlashParserService_1.SlashParserService)
