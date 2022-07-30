@@ -26,7 +26,6 @@ class SlashCommandsInstaller extends hades_1.Installer {
     }
     install(container) {
         return __awaiter(this, void 0, void 0, function* () {
-            console.log('in install');
             (0, installDefaultMappedTypes_1.installDefaultMappedTypes)(container, this.mappedTypes);
             (0, installParsers_1.installParsers)(container);
             (0, installCommands_1.installCommands)(container);
