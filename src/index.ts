@@ -5,6 +5,4 @@ export * from "./installer";
 export * from "./metadata";
 export * from "./models";
 export * from "./parsers";
-export * from "./services/SlashCommandBotService";
-export * from "./services/SlashCommandFactory";
-export * from "./services/SlashCommandService";
+export * from "./services";
